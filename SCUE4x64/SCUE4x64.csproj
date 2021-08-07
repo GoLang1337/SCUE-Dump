@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x64</Platform>
+    <ProjectGuid>{BE1F4E09-6010-4415-BF4F-255FBFEFA598}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>SCUE4x64</RootNamespace>
+    <AssemblyName>SCUE4x64</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <StartupObject>&lt;Module&gt;</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+    <PlatformTarget>x64</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY00$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY00Q6MPEBXXZ.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY01$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY03$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY03PEBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY04$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY05$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY06$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY07$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY08$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY09$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0A@P6AHXZ.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0A@P6AXXZ.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0BA@$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0BB@$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0BD@$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0BH@$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0FA@$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0JK@PEBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0L@$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0M@$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0N@$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0O@$$CBD.cs" />
+    <Compile Include="-CppImplementationDetails-\$ArrayType$$$BY0P@$$CBD.cs" />
+    <Compile Include="-CrtImplementationDetails-\LanguageSupport.cs" />
+    <Compile Include="-CrtImplementationDetails-\ModuleLoadException.cs" />
+    <Compile Include="-CrtImplementationDetails-\ModuleLoadExceptionHandlerException.cs" />
+    <Compile Include="-CrtImplementationDetails-\ModuleUninitializer.cs" />
+    <Compile Include="-CrtImplementationDetails-\Progress.cs" />
+    <Compile Include="-CrtImplementationDetails-\ThisModule.cs" />
+    <Compile Include="-CrtImplementationDetails-\TriBool.cs" />
+    <Compile Include="-Module-.cs" />
+    <Compile Include="gcroot-System.cs" />
+    <Compile Include="ICLRRuntimeHost.cs" />
+    <Compile Include="ICorRuntimeHost.cs" />
+    <Compile Include="IUnknown.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="_EXCEPTION_POINTERS.cs" />
+    <Compile Include="_GUID.cs" />
+    <Compile Include="__scrt_native_startup_state.cs" />
+    <Compile Include="__s_GUID.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.manifest" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
