@@ -112,6 +112,8 @@ Process[] processesByName = Process.GetProcessesByName(currentProcess.ProcessNam
 	}
   
  
+```
+
  - Process strings detections
 
 ```csharp
